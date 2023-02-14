@@ -17,9 +17,18 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.table-respon {
-  overflow-x: auto;
+.content-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 77vh;
 }
+.cursor{
+  cursor: pointer;
+}
+
 .jodit-status-bar {
   visibility: hidden;
 }
@@ -42,13 +51,13 @@ div.jodit-wysiwyg {
   letter-spacing: 1px;
   border-radius: 50%;
 }
-.BRASS {
-  font-family: "Michroma", sans-serif;
-  margin-left: 25px;
-  margin-top: -10px;
-  font-weight: 900;
-  font-size: 25px;
+.outlet {
+  margin-top: -3rem;
 }
+#btn {
+  text-transform: none;
+}
+
 .sweet-loading {
   width: 100%;
   display: flex;
@@ -152,6 +161,7 @@ div.jodit-wysiwyg {
 }
 .layout-pagii {
   width: 100%;
+  
 }
 .layout-navbar {
   position: relative;
@@ -394,12 +404,12 @@ i.icon {
   color: white;
 }
 .Header-row .icons {
-  margin: 16px 7px;
-  padding: 8px;
+  margin: 0 7px;
+    padding: 7px 8px 9px;
   border: 1px solid #e6e6e6;
   border-radius: 10px;
   background-color: #fff;
-  font-size: 20px;
+  font-size: 15px;
 }
 .Header-row .welcome {
   padding: 5px 0px;
@@ -413,74 +423,165 @@ i.icon {
   padding: 0px 0px;
   color: #000000;
 }
-.Header-row .name{
+.Header-row .name {
   position: absolute;
   margin-top: -6px;
 }
-.Header-row .ham-icon{
+.Header-row .ham-icon {
   font-size: 30px;
   margin-top: 4px;
   margin-right: 5px;
 }
+.Dashboard .icon {
+  padding: 8px 14px;
+  margin: 14px 8px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.Dashboard .box {
+  padding: 0 4px;
+  margin: 0 -5px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+}
+.Dashboard .dash-detail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  padding: 10px 0;
+  letter-spacing: -0.011em;
 
-@media (max-width: 1230px){
+  color: rgba(0, 0, 0, 0.8);
+}
+.Dashboard .text-bold {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 35px;
+  letter-spacing: -0.011em;
+  color: #000000;
+}
+.Dash-table ul {
+  display: inline-block;
+  padding: 4px 0;
+  list-style-type:none;
+  white-space:nowrap;
+  overflow:auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+.Dash-table ul::-webkit-scrollbar {
+  display: none;
+}
+.Dash-table li {
+  display: inline;
+  padding: 4px 7px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666666;
+}
+.Dash-table .acti {
+  background: #f3f0fc;
+  border: 0.5px solid #6842d9;
+  border-radius: 7px;
+  color: #6842d9;
+}
+.Dash-table #btn {
+  background: #6842d9;
+  border-radius: 10px;
+  padding: 7px 30px;
+  margin-top: -3px;
+}
+#menu{
+  font-size: 14px;
+}
+.sidebar-wrap{
+  margin-top: 70px;
+
+}
+.Enhance-table .fertility{
+  padding: 7px 14px;
+  background: #F7FFF8;
+border: 1px solid #3BB54A;
+border-radius: 6px;
+
+}
+.Enhance-table .mimo{
+  padding: 7px 62px 7px 14px;
+  background: #FFF7F7;
+border: 1px solid #FB6A6A;
+border-radius: 6px;
+
+
+}
+.Enhance-table .needs_action{
+  padding: 7px 14px;
+  border: 1px solid #E6E6E6;
+border-radius: 6px;
+
+}
+.Enhance-table .email{
+  color: #1877F2;
+}
+
+@media (max-width: 1230px) {
   .search-bar {
     width: 25rem;
-  
   }
 }
-@media (max-width: 1124px){
+@media (max-width: 1124px) {
   .Header-row .welcome {
     font-size: 17px;
   }
   .search-bar {
     width: 22rem;
-  
   }
 }
-@media (max-width: 1060px){
+@media (max-width: 1060px) {
   .Header-row .welcome {
     font-size: 16px;
   }
   .search-bar {
     width: 18rem;
-  
   }
 }
-@media (max-width: 1002px){
+@media (max-width: 1002px) {
   .Header-row .welcome {
     font-size: 14px;
   }
   .search-bar {
     width: 14rem;
-  
   }
 }
-@media (max-width: 923px){
+@media (max-width: 991px) {
+  .Enhance-table{
+    margin-top: 45px;
+  }
+}
+@media (max-width: 923px) {
   .Header-row .welcome {
     font-size: 13px;
   }
   .search-bar {
     width: 13rem;
-  
   }
 }
-@media (max-width: 888px){
+@media (max-width: 888px) {
   .Header-row .welcome {
     font-size: 12px;
   }
   .search-bar {
     width: 12rem;
-  
   }
 }
-@media (max-width: 842px){
+@media (max-width: 842px) {
   .Header-row .welcome {
     font-size: 10px;
   }
   .search-bar {
     width: 10rem;
-  
   }
 }
 @media (max-width: 790px) {
@@ -493,111 +594,101 @@ i.icon {
   .Header-row .welcomes {
     font-size: 13px;
   }
-.Header-row .name{
-  font-size: 13px;
-
-}
+  .Header-row .name {
+    font-size: 13px;
+  }
   .search-bar {
     width: 17rem;
+  }
+  .outlet {
+    margin-top: 5rem;
+  }
+  .sidebar-wrap{
+    margin-top: 40px;
   
   }
 }
-@media (max-width: 761px){
+@media (max-width: 761px) {
   .Header-row .welcomes {
     font-size: 13px;
     padding-top: 10px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 13px;
-  
   }
-  
+
   .search-bar {
     width: 16rem;
-  
   }
 }
-@media (max-width: 678px){
+@media (max-width: 678px) {
   .Header-row .welcomes {
     font-size: 12px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 12px;
-  
   }
   .search-bar {
     width: 14rem;
-  
   }
 }
-@media (max-width: 614px){
+@media (max-width: 614px) {
   .search-bar {
     width: 13rem;
-  
   }
 }
-@media (max-width: 592px){
+@media (max-width: 592px) {
   .Header-row .welcomes {
     font-size: 11px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 11px;
-  
   }
   .search-bar {
     width: 11rem;
-  
   }
 }
-@media (max-width: 551px){
+@media (max-width: 551px) {
   .Header-row .welcomes {
     font-size: 10px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 10px;
-  
   }
   .search-bar {
     width: 9.5rem;
-  
   }
 }
-@media (max-width: 518px){
+@media (max-width: 518px) {
   .Header-row .welcomes {
     font-size: 9px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 9px;
-  
   }
   .search-bar {
     width: 8.5rem;
-  
   }
 }
-@media (max-width: 496px){
+@media (max-width: 496px) {
   .Header-row .welcomes {
     font-size: 9px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 9px;
-  
   }
   .search-bar {
     width: 7.5rem;
-  
   }
 }
-@media (max-width: 475px){
+@media (max-width: 475px) {
   .Header-row .welcomes {
     font-size: 9px;
   }
-  .Header-row .name{
+  .Header-row .name {
     font-size: 9px;
-  
   }
   .search-bar {
     width: 6.5rem;
-  
   }
 }
